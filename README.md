@@ -1,1 +1,6 @@
-# sofgan
+# A Free Viewpoint Portrait Generator with Dynamic Styling
+### [Anpei Chen*](https://scholar.google.com/citations?user=fuR1FBwAAAAJ&hl=en), [Ruiyang Liu*](http://vic.shanghaitech.edu.cn/vrvc/en/people/ruiyang-liu/), [Ling Xie](https://scholar.google.com/citations?user=o5AJIyMAAAAJ&hl=en), [Jingyi Yu](http://vic.shanghaitech.edu.cn/vrvc/en/people/jingyi-yu/)
+
+The baseline style-based GANs produce photo-realistic portrait images from a single generation space, though achieving impressing control over scale-specific attributes, semantically meaningful attributes are still entangled in the single generation space, limits its power in attribute-specific synthesis. We decompose the generation space into two subspaces for more explicit attributes controlling: geometric modeling and texturing spaces, e.g., a novel semantic occupancy field (SOF) representation for the underlying geometric structure of all portraits and a semantic instance wised(SIW) StyleGAN for semantic region-wise texturing. We build an Avatar dataset with $664$ 3D portrait scans for SOF training and use spacial adaptive normalization layer implicitly learns semantic manning that relax the pairwise constraint in most image-to-image translation methods. Adequate experiments show that our representations enable appearance consistence shape, pose, regional styles controlling, achieve state-of-the-art results and generalise well to varying inputs.
+
+![](https://github.com/apchenstu/sofgan/blob/master/githubpage.gif)
