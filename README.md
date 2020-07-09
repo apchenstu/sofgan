@@ -1,6 +1,7 @@
 ## A Free Viewpoint Portrait Generator with Dynamic Styling
 ### [Anpei Chen*](https://scholar.google.com/citations?user=fuR1FBwAAAAJ&hl=en), [Ruiyang Liu*](http://vic.shanghaitech.edu.cn/vrvc/en/people/ruiyang-liu/), [Ling Xie](https://scholar.google.com/citations?user=o5AJIyMAAAAJ&hl=en), [Jingyi Yu](http://vic.shanghaitech.edu.cn/vrvc/en/people/jingyi-yu/)
-[[paper:http://arxiv.org/abs/2007.03780]](http://arxiv.org/abs/2007.03780)
+[paper:http://arxiv.org/abs/2007.03780](http://arxiv.org/abs/2007.03780)
+
 Generating portrait images from a single latent space facing the problem of entangled attributes, making it difficult to explicitly adjust the generation on specific attributes, e.g., contour and viewpoint control or dynamic styling. Therefore, we propose to decompose the generation space into two subspaces: geometric and texture space. We first encode portrait scans with a semantic occupancy field (SOF), which represents semantic-embedded geometry structure and output free-viewpoint semantic segmentation maps. Then we design a semantic instance wised(SIW) StyleGAN to regionally styling the segmentation map. We capture 664 3D portrait scans for our SOF training and use real capture photos(FFHQ and CelebA-HQ) for SIW StyleGAN training. Adequate experiments show that our representations enable appearance consistent shape, pose, regional styles controlling, achieve state-of-the-art results, and generalize well in various application scenarios.
 
 ![](https://github.com/apchenstu/sofgan/blob/master/githubpage.gif)
