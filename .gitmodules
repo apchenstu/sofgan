@@ -1,0 +1,3 @@
+[submodule "modules/sof"]
+	path = modules/sof
+	url = https://github.com/walnut-REE/sof.git
