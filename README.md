@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SofGAN (TOG 2021)
 ## [Project page](https://apchenstu.github.io/sofgan/) |  [Paper](https://arxiv.org/abs/2007.03780)
 This repository contains a pytorch implementation for the paper: [SofGAN: A Portrait Image Generator with Dynamic Styling](https://arxiv.org/abs/2007.03780).
@@ -98,3 +99,13 @@ numpages = {26},
 keywords = {image editing, Generative adversarial networks}
 }
 
+=======
+## A Portrait Image Generator with Dynamic Styling
+### [Anpei Chen*](https://scholar.google.com/citations?user=fuR1FBwAAAAJ&hl=en), [Ruiyang Liu*](http://vic.shanghaitech.edu.cn/vrvc/en/people/ruiyang-liu/), [Ling Xie](https://scholar.google.com/citations?user=o5AJIyMAAAAJ&hl=en), [Zhang Chen](https://scholar.google.com/citations?user=4MIbSrAAAAAJ&hl=en), [Hao Su](https://cseweb.ucsd.edu/~haosu/), [Jingyi Yu](http://vic.shanghaitech.edu.cn/vrvc/en/people/jingyi-yu/)
+Paper: [http://arxiv.org/abs/2007.03780](http://arxiv.org/abs/2007.03780)
+Project page: [https://apchenstu.github.io/sofgan/](https://apchenstu.github.io/sofgan/)
+
+Recently, GANs have been widely used for portrait generation. However, in the latent space learned by GANs, different attributes, such as pose, shape, and texture style, are generally entangled, making the explicit control of specific attributes difficult. To address this issue, we propose a SOFGAN image generator to decouple the latent space of portraits into two subspaces: a geometry space and a texture space. The latent codes sampled from the two subspaces are fed to two network branches separately, one to generate the 3D geometry of portraits with canonical pose, and the other to generate textures. The aligned 3D geometries also come with semantic part segmentation, encoded as a semantic occupancy field (SOF). The SOF allows the rendering of consistent 2D semantic segmentation maps at arbitrary views, which are then fused with the generated texture maps and stylized to a portrait photo using our semantic instance-wise (SIW) Module. Through extensive experiments, we show that our system can generate high quality portrait images with independently controllable geometry and texture attributes. The method also generalizes well in various applications such as appearance-consistent facial animation and dynamic styling.
+
+![](https://github.com/apchenstu/sofgan/blob/master/githubpage.gif)
+>>>>>>> 7fdcd95945b4cc2be706293c01a8c154fb1dfb72
