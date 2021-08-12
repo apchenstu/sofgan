@@ -8,7 +8,7 @@ Experiments on **SofGAN** show that our system can generate high quality portrai
 
 ## Installation
 
-![version](https://img.shields.io/badge/PyTorch-%3E%3D1.2.0-blue)![version](https://img.shields.io/badge/Ubuntu-%3E%3D16.04-blue)![version](https://img.shields.io/badge/TorchVision-%3E%3D0.4.0-blue)
+![version](https://img.shields.io/badge/PyTorch-%3E%3D1.2.0-blue) ![version](https://img.shields.io/badge/Ubuntu-%3E%3D16.04-blue) ![version](https://img.shields.io/badge/TorchVision-%3E%3D0.4.0-blue)
 
 
 Install environment:
