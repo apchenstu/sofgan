@@ -1,4 +1,3 @@
-
 # SofGAN (TOG 2021)
 ## [Project page](https://apchenstu.github.io/sofgan/) |  [Paper](https://arxiv.org/abs/2007.03780)
 This repository contains a pytorch implementation for the paper: [SofGAN: A Portrait Image Generator with Dynamic Styling](https://arxiv.org/abs/2007.03780).
@@ -49,7 +48,7 @@ We provide a rendering script in `renderer.ipynb`, you can restyle your own phot
 Just to download our  [checkpoints](https://drive.google.com/file/d/1LPKU3AJVlhnyXBGzLS0UrOEhIT1gcFpD/view?usp=sharing) and unzip to the root folder.
 
 ## UI Illustration
-   A Painter is in included in `Painter`, you can pull down and drawing on-the-fly.
+   The Painter is included in `Painter`, you can pull down and drawing on-the-fly.
    Before that, you need to install the enviroment with ```pip install -r ./Painter/requirements.txt```
 
 ![UI](https://github.com/apchenstu/GIFs/blob/main/sofgan.gif)
@@ -98,4 +97,3 @@ articleno = {1},
 numpages = {26},
 keywords = {image editing, Generative adversarial networks}
 }
-
