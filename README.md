@@ -1,14 +1,15 @@
 # SofGAN (TOG 2021)
 ## [Project page](https://apchenstu.github.io/sofgan/) |  [Paper](https://arxiv.org/abs/2007.03780)
-This repository contains a pytorch implementation for the paper: [SofGAN: A Portrait Image Generator with Dynamic Styling](https://arxiv.org/abs/2007.03780).
-We propose a SofGAN image generator to decouple the latent space of portraits into two subspaces: a geometry space and a texture space.
-Experiments on SofGAN show that our system can generate high quality portrait images with independently controllable geometry and texture attributes.<br><br>
+This repository contains the official **PyTorch** implementation for the paper: [SofGAN: A Portrait Image Generator with Dynamic Styling](https://arxiv.org/abs/2007.03780).
+We propose a **SofGAN** image generator to decouple the latent space of portraits into two subspaces: a geometry space and a texture space.
+Experiments on **SofGAN** show that our system can generate high quality portrait images with independently controllable geometry and texture attributes.<br><br>
 
 ![Teaser](https://github.com/apchenstu/apchenstu.github.io/blob/master/sofgan/img/semantic_level.png)
 
 ## Installation
 
-#### Require Ubuntu 16.04 + Pytorch>=1.2.0 and torchvision>=0.4.0
+![version](https://img.shields.io/badge/PyTorch-%3E%3D1.2.0-blue) ![version](https://img.shields.io/badge/Ubuntu-%3E%3D16.04-blue) ![version](https://img.shields.io/badge/TorchVision-%3E%3D0.4.0-blue)
+
 
 Install environment:
 ```
@@ -24,11 +25,11 @@ Please see each subsection for training on different datasets. Available trainin
 * [CelebA](https://github.com/switchablenorms/CelebAMask-HQ)
 * [Your own data](#your-own-data) (portrait images or segmaps)
 
-We also provide our pre-process [ffhq and celeba segmaps](https://drive.google.com/file/d/1_gSENMI5hYj-JTjqtn14PkoLLnEp94oY/view?usp=sharing) (in our classes labels). You may also want to
-   retrain the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
+We also provide our pre-process [ffhq and celeba segmaps](https://drive.google.com/file/d/1_gSENMI5hYj-JTjqtn14PkoLLnEp94oY/view?usp=sharing) (in our classes labels). You may also want to re-train the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
 
-Run
-```
+## Run
+
+```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=9999 train.py \
     --num_worker 4  --resolution 1024
    --name $exp_name
@@ -38,14 +39,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node
    --condition_path path/to/your/segmap/folders
 ```
 
-We strongly suggest you to use at least 4 GPUs, 4GPUs would take  ~20 days for 10000k iterations. You can also reduce the resolution or iterations on your own dataset,
-you should have pleasure results after 1000k iterations.
+In our experiments, 4x **Nividia 2080Ti** GPU  would take around `20` days to reach `10000k` iterations.  Adjusting the image resolution and max iterations to suit your own dataset. Emperically, for datasets like [FFHQ](https://github.com/NVlabs/stylegan) and [CelebA](https://github.com/switchablenorms/CelebAMask-HQ)(resolution `1024x1024`) the network would converge after `1000k` iterations and achieve fancy results.
 
-*Important*: training on none pair-wise data (image/segmap) is encouraged, this is one of the key features of our sofgan.
+***Notice***: training on none pair-wise data (image/segmap) is encouraged. Since it's one of the key features of our **SofGAN**.
 
 ## Rendering
-We provide a rendering script in `renderer.ipynb`, you can restyle your own photos, videos, generating free-viewpoing portrait images.
-Just to download our  [checkpoints](https://drive.google.com/file/d/1LPKU3AJVlhnyXBGzLS0UrOEhIT1gcFpD/view?usp=sharing) and unzip to the root folder.
+We provide a rendering script in `renderer.ipynb`, where you can restyle your own photos, videos and generate free-viewpoint portrait images while maintaining the geometry consistency.
+Just to download our [checkpoints](https://drive.google.com/file/d/1LPKU3AJVlhnyXBGzLS0UrOEhIT1gcFpD/view?usp=sharing) and unzip to the root folder.
 
 ## UI Illustration
    The Painter is included in `Painter`, you can pull down and drawing on-the-fly.
@@ -54,12 +54,12 @@ Just to download our  [checkpoints](https://drive.google.com/file/d/1LPKU3AJVlhn
 ![UI](https://github.com/apchenstu/GIFs/blob/main/sofgan.gif)
 
 ## IOS App
-You could download and try the [Wand](https://apps.apple.com/cn/app/wand/id1574341319), an ipad app developed by [Deemos](https://www.deemos.com/).
+You could download and try the [Wand](https://apps.apple.com/cn/app/wand/id1574341319), an **IOS** App developed by [Deemos](https://www.deemos.com/).
 
 ![two-dimensions](https://github.com/apchenstu/GIFs/blob/main/two-dimensions.gif)
 
 ## Online Demo
-On the way ...
+New Folder
 
 ## Relevant Works
 [**StyleFlow: Attribute-conditioned Exploration of StyleGAN-Generated Images using Conditional Continuous Normalizing Flows (TOG 2021)**](https://arxiv.org/abs/2008.02401)<br>
