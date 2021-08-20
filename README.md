@@ -80,20 +80,9 @@ Taesung Park, Ming-Yu Liu, Ting-Chun Wang, Jun-Yan Zhu
 ## Citation
 If you find our code or paper helps, please consider citing:
 ```
-@article{sofgan,
-author = {Chen, Anpei and Liu, Ruiyang and Xie, Ling and Chen, Zhang and Su, Hao and Yu Jingyi},
-title = {SofGAN: A Portrait Image Generator with Dynamic Styling},
-year = {2021},
-issue_date = {Jul 2021},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {41},
-number = {1},
-url = {https://doi.org/10.1145/3470848},
-doi = {10.1145/3470848},
-journal = {ACM Trans. Graph.},
-month = July,
-articleno = {1},
-numpages = {26},
-keywords = {image editing, Generative adversarial networks}
+@article{chen2021sofgan,
+  title={SofGAN: A Portrait Image Generator with Dynamic Styling},
+  author={Chen, Anpei and Liu, Ruiyang and Xie, Ling and Chen, Zhang and Su, Hao and Yu, Jingyi},
+  journal={ACM transactions on graphics},
+  year={2021}
 }
