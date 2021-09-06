@@ -6,13 +6,17 @@ Experiments on **SofGAN** show that our system can generate high quality portrai
 
 ![Teaser](https://github.com/apchenstu/apchenstu.github.io/blob/master/sofgan/img/semantic_level.png)
 
+### Colab Demo
+
+[Here](https://colab.research.google.com/drive/1V03JfVsuOamgncWMXoOOSRsQPzd35x5v?usp=sharing) we provide a **Colab** demo, which basically demonstrated the capbility of **style transfer** and **free-viewpoint protrait**. 
+
 ## Installation
 
-![version](https://img.shields.io/badge/PyTorch-%3E%3D1.2.0-blue) ![version](https://img.shields.io/badge/Ubuntu-%3E%3D16.04-blue) ![version](https://img.shields.io/badge/TorchVision-%3E%3D0.4.0-blue)
+![version](https://img.shields.io/badge/pytorch-%3E%3D%201.7.1-blue) ![version](https://img.shields.io/badge/Ubuntu-%3E%3D16.04-blue) ![version](https://img.shields.io/badge/torchvision-%3E%3D0.8.2-blue)![version](https://img.shields.io/badge/cudatoolkit-%3D%3D10.2-blue)
 
 
 Install environment:
-```
+```bash
 git clone https://github.com/apchenstu/sofgan.git --recursive
 conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.2 -c pytorch
 pip install tqdm argparse scikit-image lmdb config-argparse dlib
@@ -86,3 +90,4 @@ If you find our code or paper helps, please consider citing:
   journal={ACM transactions on graphics},
   year={2021}
 }
+```
