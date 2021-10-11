@@ -97,7 +97,7 @@ class Ex(QWidget, Ui_Form):
                 seg_label = torch.from_numpy(self.id_remap(self.mat_img)).view(1,1,512,512).float().cuda()
                 fake_img, _, _, _ = self.generator(self.styles[self.current_style%len(self.styles)], return_latents=False,
                                                    condition_img=seg_label, input_is_latent=True, noise=self.noise)
-                fake_img = ((fake_img[0].permute(1,2,0).cpu().numpy()+ 1) / 2 * 255).astype('uint8')
+                fake_img = ((fake_img[0].permute(1,2,0).cpu()+ 1) / 2 * 255).clamp_(0,255).numpy().astype('uint8')
                 fake_img = cv2.resize(fake_img, (512, 512))
             self.GT_scene_image_pts.setPixmap(QPixmap.fromImage(QImage(fake_img.data.tobytes(), \
                                                              fake_img.shape[1], fake_img.shape[0],
