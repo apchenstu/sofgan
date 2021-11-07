@@ -84,10 +84,5 @@ Taesung Park, Ming-Yu Liu, Ting-Chun Wang, Jun-Yan Zhu
 ## Citation
 If you find our code or paper helps, please consider citing:
 ```
-@article{chen2021sofgan,
-  title={SofGAN: A Portrait Image Generator with Dynamic Styling},
-  author={Chen, Anpei and Liu, Ruiyang and Xie, Ling and Chen, Zhang and Su, Hao and Yu, Jingyi},
-  journal={ACM transactions on graphics},
-  year={2021}
-}
+
 ```
