@@ -1,4 +1,4 @@
-# SofGAN (TOG 2021)
+# SofGAN (TOG 2022)
 ## [Project page](https://apchenstu.github.io/sofgan/) |  [Paper](https://arxiv.org/abs/2007.03780)
 This repository contains the official **PyTorch** implementation for the paper: [SofGAN: A Portrait Image Generator with Dynamic Styling](https://arxiv.org/abs/2007.03780).
 We propose a **SofGAN** image generator to decouple the latent space of portraits into two subspaces: a geometry space and a texture space.
