@@ -82,7 +82,16 @@ Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, Timo 
 Taesung Park, Ming-Yu Liu, Ting-Chun Wang, Jun-Yan Zhu
 
 ## Citation
-If you find our code or paper helps, please consider citing:
+If you find our code or paper helps, please cite:
 ```
-
+@article{sofgan,
+  title={Sofgan: A portrait image generator with dynamic styling},
+  author={Chen, Anpei and Liu, Ruiyang and Xie, Ling and Chen, Zhang and Su, Hao and Yu, Jingyi},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={41},
+  number={1},
+  pages={1--26},
+  year={2022},
+  publisher={ACM New York, NY}
+}
 ```
