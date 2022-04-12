@@ -29,7 +29,7 @@ Please see each subsection for training on different datasets. Available trainin
 * [CelebA](https://github.com/switchablenorms/CelebAMask-HQ)
 * [Your own data](#your-own-data) (portrait images or segmaps)
 
-We also provide our pre-process [ffhq and celeba segmaps](https://drive.google.com/file/d/1_gSENMI5hYj-JTjqtn14PkoLLnEp94oY/view?usp=sharing) (in our classes labels). You may also want to re-train the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
+We also provide our pre-process [ffhq and celeba segmaps](xxx) (in our classes labels). You may also want to re-train the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
 
 ## Run
 
@@ -49,7 +49,7 @@ In our experiments, 4x **Nividia 2080Ti** GPU  would take around `20` days to re
 
 ## Rendering
 We provide a rendering script in `renderer.ipynb`, where you can restyle your own photos, videos and generate free-viewpoint portrait images while maintaining the geometry consistency.
-Just to download our [checkpoints](https://drive.google.com/file/d/1LPKU3AJVlhnyXBGzLS0UrOEhIT1gcFpD/view?usp=sharing) and unzip to the root folder.
+Just to download our [checkpoints](https://1drv.ms/u/s!Ard0t_p4QWIMhhMRH8WWKhqD9VGu?e=HnMk5J) and unzip to the root folder.
 
 ## UI Illustration
    The Painter is included in `Painter`, you can pull down and drawing on-the-fly.
