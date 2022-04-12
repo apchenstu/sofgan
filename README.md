@@ -29,7 +29,7 @@ Please see each subsection for training on different datasets. Available trainin
 * [CelebA](https://github.com/switchablenorms/CelebAMask-HQ)
 * [Your own data](#your-own-data) (portrait images or segmaps)
 
-We also provide our pre-process [ffhq and celeba segmaps](xxx) (in our classes labels). You may also want to re-train the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
+We also provide our pre-process [ffhq and celeba segmaps](https://1drv.ms/u/s!Ard0t_p4QWIMhhQQz82NRbxRIjZ5?e=uYiBpg) (in our classes labels). You may also want to re-train the [SOF model](https://github.com/walnut-REE/sof/) base on your own multi-view segmaps.
 
 ## Run
 
