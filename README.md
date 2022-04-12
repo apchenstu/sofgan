@@ -49,7 +49,7 @@ In our experiments, 4x **Nividia 2080Ti** GPU  would take around `20` days to re
 
 ## Rendering
 We provide a rendering script in `renderer.ipynb`, where you can restyle your own photos, videos and generate free-viewpoint portrait images while maintaining the geometry consistency.
-Just to download our [checkpoints](https://1drv.ms/u/s!Ard0t_p4QWIMhhMRH8WWKhqD9VGu?e=HnMk5J) and unzip to the root folder.
+Just to download our [checkpoints](https://drive.google.com/file/d/17SW3MurX_78_CfT29DaBZuqnKEjkbzQv/view?usp=sharing) and unzip to the root folder.
 
 ## UI Illustration
    The Painter is included in `Painter`, you can pull down and drawing on-the-fly.
